@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Profil Sederhana</title>
+  <style>
+    /* Meratakan kartu profil tepat di tengah layar */
+    body {
+      background-color: #f4f4f9;
+      font-family: sans-serif;
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Kotak Kartu Profil */
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 280px;
+      
+      /* Flexbox vertikal untuk isi kartu */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .foto {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    /* Flexbox horizontal untuk tombol sosmed */
+    .sosmed {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .sosmed a {
+      text-decoration: none;
+      color: white;
+      background: #007bff;
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="foto gue.jpg" alt="Foto Profil" class="foto">
+    <h2>Luthfiani Fauziah</h2>
+    <p style="color: #666; margin: 5px 0;">Artist</p>
+    <p style="font-size: 14px;">Halo! Saya belajar HTML dan CSS Flexbox.</p>
+    
+    <div class="sosmed">
+      <a href="#">Instagram</a>
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+
+</body>
+</html>
